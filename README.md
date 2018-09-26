@@ -1,5 +1,5 @@
 # UR_kinematics_solver
-This python script provides solution of forward kinematics and inverse kinematics for Universal Robot UR3/5/10. Both UR type format and ROS Pose type format are supported.
+This python script provides analytical solutions of forward kinematics and inverse kinematics for Universal Robot UR3/5/10. Both UR type format and ROS Pose type format are supported in inverse kinematics.
 
 ## Prerequisites
 Python 2.7.12 <br />
