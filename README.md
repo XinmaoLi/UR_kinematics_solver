@@ -1,5 +1,5 @@
 # UR_kinematics_solver
-This python script provides analytical solutions of forward kinematics and inverse kinematics for Universal Robot UR3/5/10. Both UR type format and ROS Pose type format are supported in inverse kinematics.
+This python script provides analytical solutions of forward kinematics and inverse kinematics for Universal Robot UR3/5/10. Both UR format and ROS Pose format are supported in inverse kinematics.
 
 ## Prerequisites
 Python 2.7.12 <br />
@@ -21,10 +21,10 @@ from kinematics import *
 print "Unit: radian"
 current_joint = [1.7499912646190512, -1.8984856736217983, -1.190571570471343, 0.21869218174224894, 2.9533489836072846, 0.45469538502275836]
 
-print "SE(3) in numpy.array type"
+print "SE(3) in numpy.array format"
 print fwd_kin(current_joint)
 
-print "SE(3) in ROS Pose type"
+print "SE(3) in ROS Pose format"
 print fwd_kin(current_joint, o_unit='p')
 ```
 
