@@ -8,7 +8,7 @@ ROS 16.04
 
 ## Examples
 ### Forward Kinematics
-
+You can use an arg ```o_unit='p'``` to get an output in ```numpy.array``` format.
 ```
 from kinematics import *
 
@@ -23,7 +23,7 @@ print fwd_kin(current_joint, o_unit='p')
 ```
 
 ### Inverse Kinematics
-
+You can use an arg ```o_unit='d'``` to get an output in degree unit.
 ```
 from kinematics import *
 
@@ -41,6 +41,7 @@ print inv_kin(target_pose, desired_solution, o_unit='d')
 ```
 
 ### If your input is in degree unit ...
+Just add an arg: ```i_unit='d'```.
 ```
 fwd_kin(current_joint, i_unit='d')
 inv_kin(target_pose, desired_solution, i_unit='d')
