@@ -14,7 +14,7 @@ UR3 for ```'UR3'```<br />
 
 ## Examples
 ### Forward Kinematics
-You can use an arg ```o_unit='p'``` to get an output in ROS Pose format.
+You can use an arg ```o_unit='p'``` to get an output in **ROS Pose** format.
 ```
 from kinematics import *
 
@@ -29,7 +29,7 @@ print fwd_kin(current_joint, o_unit='p')
 ```
 
 ### Inverse Kinematics
-You can use an arg ```o_unit='d'``` to get an output in degree unit.
+You can use an arg ```o_unit='d'``` to get an output in **degree** unit.
 ```
 from kinematics import *
 
