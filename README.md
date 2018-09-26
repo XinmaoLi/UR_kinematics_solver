@@ -10,10 +10,10 @@ ROS 16.04
 ### Forward Kinematics
 
 ```
-import kinematics
+from kinematics import *
 
 print "Unit: radian"
-joint_values = [1.7499912646190512, -1.8984856736217983, -1.190571570471343, 0.21869218174224894, 2.9533489836072846, 0.45469538502275836]
+current_joint = [1.7499912646190512, -1.8984856736217983, -1.190571570471343, 0.21869218174224894, 2.9533489836072846, 0.45469538502275836]
 
 print "SE(3) in numpy.array type"
 print fwd_kin(current_joint)
@@ -25,7 +25,7 @@ print fwd_kin(current_joint, o_unit='p')
 ### Inverse Kinematics
 
 ```
-import kinematics
+from kinematics import *
 
 print "Unit: radian"
 desired_solution = [1.7499912644507227, -1.8984856734885085, -1.1905715707581692, 0.21869218099676013, 2.9534288849387984, 0.45469538414663446]
@@ -45,3 +45,6 @@ print inv_kin(target_pose, desired_solution, o_unit='d')
 fwd_kin(current_joint, i_unit='d')
 inv_kin(target_pose, desired_solution, i_unit='d')
 ```
+
+### Remarks
+Both inputs of UR format [X, Y, Z, RX, RY, RZ] and ROS Pose format are supported in inv_kin()
