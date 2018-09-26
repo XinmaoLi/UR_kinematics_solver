@@ -14,7 +14,7 @@ UR3 for ```'UR3'```<br />
 
 ## Examples
 ### Forward Kinematics
-You can use an arg ```o_unit='p'``` to get an output in ```numpy.array``` format.
+You can use an arg ```o_unit='p'``` to get an output in ROS Pose format.
 ```
 from kinematics import *
 
