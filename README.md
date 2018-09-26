@@ -8,8 +8,8 @@ ROS 16.04
 
 ## Setup
 Assign an indicator of your robot model to ```ROBOT``` at line 26 of **kinematics.py**: <br />
-UR10 for ```'UR10'```<br />
-UR5 for ```'UR5'```<br />
+UR10： ```'UR10'```<br />
+UR5： ```'UR5'```<br />
 UR3 for ```'UR3'```<br />
 
 ## Examples
