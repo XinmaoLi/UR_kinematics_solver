@@ -40,11 +40,14 @@ print inv_kin(target_pose, desired_solution, o_unit='d')
 
 ```
 
-### If you use a input with degree ...
+### If your input is in degree unit ...
 ```
 fwd_kin(current_joint, i_unit='d')
 inv_kin(target_pose, desired_solution, i_unit='d')
 ```
 
 ### Remarks
-Both inputs of UR format [X, Y, Z, RX, RY, RZ] and ROS Pose format are supported in inv_kin()
+Both inputs of UR format [X, Y, Z, RX, RY, RZ] and ROS Pose format are supported in inv_kin().
+
+## Contribution
+Please feel free to propose issues or contact me.
