@@ -10,7 +10,7 @@ ROS 16.04
 Assign an indicator of your robot model to ```ROBOT``` at line 26 of **kinematics.py**: <br />
 UR10： ```'UR10'```<br />
 UR5： ```'UR5'```<br />
-UR3 for ```'UR3'```<br />
+UR3： ```'UR3'```<br />
 
 ## Examples
 ### Forward Kinematics
@@ -41,7 +41,7 @@ target_pose = [-0.062216135428015254, 0.7551066318135237, 0.8528777013335628, -1
 print "Joint values in radian"
 print inv_kin(target_pose, desired_solution)
 
-print "Joint values in degrees"
+print "Joint values in degree"
 print inv_kin(target_pose, desired_solution, o_unit='d')
 
 ```
