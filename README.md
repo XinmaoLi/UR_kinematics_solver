@@ -2,9 +2,15 @@
 This python script provides solution of forward kinematics and inverse kinematics for Universal Robot UR3/5/10. Both UR type format and ROS Pose type format are supported.
 
 ## Prerequisites
-Python 2.7.12
-numpy 1.11.0
+Python 2.7.12 <br />
+numpy 1.11.0 <br />
 ROS 16.04
+
+## Setup
+Assign an indicator of your robot model to ```ROBOT``` at line 26: <br />
+UR10 for ```'UR10'```<br />
+UR5 for ```'UR5'```<br />
+UR3 for ```'UR3'```<br />
 
 ## Examples
 ### Forward Kinematics
